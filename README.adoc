@@ -2,6 +2,7 @@ Trying to visualize the Collatz Conjecture, one of the popular mathmatical probl
 
 ## What is the Collatz Conjecture?
 It derives from the Collatz Problem. The Collatz Problem has been discovered by the german mathemetician Lothar Collatz. It describes no matter at which positive integer you start and apply the two rules creating a sequence you will always get caught at the end in the 4-2-1 sequence loop.
+Collatz Conjecture is however a visualization of a sequence (or multiple sequences).
 
 ## The Rules
 1. Take a positive number n (greater than 0).
