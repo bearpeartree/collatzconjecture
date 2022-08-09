@@ -10,3 +10,6 @@ Collatz Conjecture is however a visualization of a sequence (or multiple sequenc
 3. Apply the rules as described in the second step for the result until you reached 1.
 
 ## How the program works
+* User needs to give a number (greater than 0) as an argument when starting the program
+* User will be asked which type of visualization the sequence should be displayed (punctual - fancy[coming soon])
+* A new window opens up with the graph
