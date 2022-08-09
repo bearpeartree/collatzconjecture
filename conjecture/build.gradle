@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClassName = 'de.propra.Start'
+    mainClassName = 'main.Start'
 }
 
 sourceCompatibility = 17
