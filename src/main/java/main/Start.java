@@ -9,6 +9,7 @@ public class Start {
 
     static int startNumber;
     public static void main(String[] args) {
+        //We'll be using it in the near future
         String option = args[0];
 
         Scanner stdIn = new Scanner(System.in);
@@ -21,8 +22,9 @@ public class Start {
                     System.out.println("number should be positiv!");
                 }
                 startNumber = number;
-                Sequence s = new Sequence();
-                s.printTestSequence(startNumber);
+
+                System.out.println(("-------------------------------"));
+                onlyPrintValues(startNumber);
             }
         } catch (InputMismatchException n) {
             System.out.println("Not a number, try again later");
@@ -34,6 +36,11 @@ public class Start {
         if(module.equals("punctual")) {
             //Call mehthod punctual, single or multiple =>2 sequence
         }
+    }
+
+    public static void onlyPrintValues(int start) {
+        Sequence sq = new Sequence();
+        sq.printTestSequence(start);
     }
 
 }
