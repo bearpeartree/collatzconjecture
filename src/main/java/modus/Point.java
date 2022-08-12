@@ -1,4 +1,4 @@
-package main;
+package modus;
 
 public class Point {
     int n;
