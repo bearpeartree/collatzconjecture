@@ -22,6 +22,8 @@ public class Start {
 
                 System.out.println(("-------------------------------"));
                 onlyPrintValues(number);
+                Sequence sq = new Sequence();
+                sq.drawPunctualSequence(number);
             }
         } catch (InputMismatchException n) {
             System.out.println("Not a number, try again later");
@@ -31,7 +33,6 @@ public class Start {
 
     public void drawConjecture(String module) {
         if(module.equals("punctual")) {
-            //Call mehthod punctual, single or multiple =>2 sequence
         }
     }
 
