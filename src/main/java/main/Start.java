@@ -6,8 +6,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Start {
-
-    static int startNumber;
     public static void main(String[] args) {
         //We'll be using it in the near future
         String option = args[0];
@@ -21,10 +19,9 @@ public class Start {
                 if(number < 0) {
                     System.out.println("number should be positiv!");
                 }
-                startNumber = number;
 
                 System.out.println(("-------------------------------"));
-                onlyPrintValues(startNumber);
+                onlyPrintValues(number);
             }
         } catch (InputMismatchException n) {
             System.out.println("Not a number, try again later");
