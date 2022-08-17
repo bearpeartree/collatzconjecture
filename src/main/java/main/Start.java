@@ -17,12 +17,21 @@ public class Start {
         try {
             while(stdIn.hasNext()) {
                 int number = stdIn.nextInt();
+
                 if(number < 0) {
                     do{
                         System.out.println("number should be positiv!");
                         number = stdIn.nextInt();
                     }while(number < 0);
                 }
+
+                if(number >= 300) {
+                    do {
+                        System.out.println("number too large!");
+                        number = stdIn.nextInt();
+                    }while(number > 300);
+                }
+
                 if(option.equals("print Sequence"))  {
                     onlyPrintValues(number);
                     return;
