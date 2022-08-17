@@ -11,5 +11,5 @@ Collatz Conjecture is however a visualization of a sequence (or multiple sequenc
 
 ## How the program works
 * User needs to give the type of visualization the sequence should be displayd in as an argument when starting the program (options to choose from: punctual or fancy [coming soon])
-* User will be asked for a positive whole number 
+* User will be asked for a positive whole number. The number shouldn't be greater than 300 since the window cuts the visualization off.
 * A new window opens up with the graph
