@@ -5,8 +5,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Start {
-
-    static int value;
     public static void main(String[] args) {
 
         String option = args[0];
