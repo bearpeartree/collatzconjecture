@@ -1,13 +1,14 @@
 package main;
 
 import modus.Sequence;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Start {
+
+    static int value;
     public static void main(String[] args) {
-        //We'll be using it in the near future
+
         String option = args[0];
 
         Scanner stdIn = new Scanner(System.in);
@@ -17,13 +18,16 @@ public class Start {
             while(stdIn.hasNext()) {
                 int number = stdIn.nextInt();
                 if(number < 0) {
-                    System.out.println("number should be positiv!");
+                    do{
+                        System.out.println("number should be positiv!");
+                        number = stdIn.nextInt();
+                    }while(number < 0);
                 }
-
-                System.out.println(("-------------------------------"));
-                onlyPrintValues(number);
-                Sequence sq = new Sequence();
-                sq.drawPunctualSequence(number);
+                if(option.equals("print Sequence"))  {
+                    onlyPrintValues(number);
+                    return;
+                }
+                drawConjecture(option, number);
             }
         } catch (InputMismatchException n) {
             System.out.println("Not a number, try again later");
@@ -31,12 +35,14 @@ public class Start {
 
     }
 
-    public void drawConjecture(String module) {
+    private static void drawConjecture(String module, int input) {
+        Sequence sq = new Sequence();
         if(module.equals("punctual")) {
+            sq.drawPunctualSequence(input);
         }
     }
 
-    public static void onlyPrintValues(int start) {
+    private static void onlyPrintValues(int start) {
         Sequence sq = new Sequence();
         sq.printTestSequence(start);
     }
